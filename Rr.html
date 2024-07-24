@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+.iimmmgg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width
+}
+.tt{
+  text-align: center;
+}
+footer{
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+  <h2 class="tt">Balanceamento de Ração Animal</h2>
+  
+<img src="https://res.cloudinary.com/dveuzubeg/image/upload/v1720129120/20240704_183626_gtaoi7.png" height="300px" width="300px" class="iimmmgg"></img>
+  <input type="text" id="EXI" placeholder="Exigência PB">
+  <br>
+  <select id="Op11">
+    <option value="9.6">Milho</option>
+    <option value="17.7">Leucena</option>
+    <option value="5.4">Palha de arroz</option>
+    <option value="8.09">Milho desintegrado Palha e sabugo</option>
+     <option value="58.14">Glúten de milho</option>
+     <option value="23.18">Farelo de Glúten de milho</option>
+      <option value="9.61">Sorgo</option>
+       <option value="14.41">Farelo de Arroz</option>
+        <option value="16.79">Farelo de trigo</option>
+         <option value="13.9">Casca de soja</option>
+          <option value="6.9">Polpa citrica</option>
+           <option value="10.3">Melaço</option>
+            <option value="51.25">Farinha de carne</option>
+             <option value="84.68">Farinha de sangue</option>
+              <option value="58.81">Farinha de peixe</option>
+               <option value="38.73">Soja</option>
+                <option value="47.64">Farelo de soja</option>
+                 <option value="23.13">Caroço de algodão</option>
+                 <option value="28">Farelo de algodão</option>
+  </select>
+  <br>
+  <select id="Op22">
+    <option value="9.6">Milho</option>
+    <option value="17.7">Leucena</option>
+    <option value="5.4">Palha de arroz</option>
+    <option value="8.09">Milho desintegrado Palha e sabugo</option>
+     <option value="58.14">Glúten de milho</option>
+     <option value="23.18">Farelo de Glúten de milho</option>
+      <option value="9.61">Sorgo</option>
+       <option value="14.41">Farelo de Arroz</option>
+        <option value="16.79">Farelo de trigo</option>
+         <option value="13.9">Casca de soja</option>
+          <option value="6.9">Polpa citrica</option>
+           <option value="10.3">Melaço</option>
+            <option value="51.25">Farinha de carne</option>
+             <option value="84.68">Farinha de sangue</option>
+              <option value="58.81">Farinha de peixe</option>
+               <option value="38.73">Soja</option>
+                <option value="47.64">Farelo de soja</option>
+                 <option value="23.13">Caroço de algodão</option>
+                 <option value="28">Farelo de algodão</option>
+  </select>
+  <br>
+  <button onclick="calc()">Calcular</button><br>
+  <p id="resposta"></p>
+  
+  <h2>Mistura</h2>
+  <select id="Op33">
+    <option>NDT</option>
+    <option value="78.7">Milho</option>
+    <option value="61.9">Leucena</option>
+    <option value="42.3">Palha de arroz</option>
+    <option value="68.24">Milho desintegrado palha e sabugo</option>
+     <option value="84.56">Glúten de milho</option>
+     <option value="73.45">Farelo de Glúten de milho</option>
+      <option value="78.43">Sorgo</option>
+       <option value="79.5">Farelo de Arroz</option>
+        <option value="72.74">Farelo de trigo</option>
+         <option value="77">Casca de soja</option>
+          <option value="79.8">Polpa citrica</option>
+           <option value="70">Melaço</option>
+            <option value="53.51">Farinha de carne</option>
+             <option value="86.67">Farinha de sangue</option>
+              <option value="69.91">Farinha de peixe</option>
+               <option value="90">Soja</option>
+                <option value="82.2">Farelo de soja</option>
+                 <option value="82.86">Caroço de algodão</option>
+                 <option value="65.77">Farelo de algodão</option>
+     
+  </select><br>
+  
+  <input type="text" id="porcent1" placeholder="% PB1"><br>
+  <select id="Op44">
+    <option>NDT</option>
+    <option value="78.7">Milho</option>
+    <option value="61.9">Leucena</option>
+    <option value="42.3">Palha de arroz</option>
+    <option value="68.24">Milho desintegrado palha e sabugo</option>
+     <option value="84.56">Glúten de milho</option>
+     <option value="73.45">Farelo de Glúten de milho</option>
+      <option value="78.43">Sorgo</option>
+       <option value="79.5">Farelo de Arroz</option>
+        <option value="72.74">Farelo de trigo</option>
+         <option value="77">Casca de soja</option>
+          <option value="79.8">Polpa citrica</option>
+           <option value="70">Melaço</option>
+            <option value="53.51">Farinha de carne</option>
+             <option value="86.67">Farinha de sangue</option>
+              <option value="69.91">Farinha de peixe</option>
+               <option value="90">Soja</option>
+                <option value="82.2">Farelo de soja</option>
+                 <option value="82.86">Caroço de algodão</option>
+                 <option value="65.77">Farelo de algodão</option>
+  </select><br>
+   <input type="text" id="porcent2" placeholder="% PB2"><br>
+  <button onclick="mmpp()">Calcular</button>
+  <p id="resposta22"></p><br>
+  
+  
+<h2>Requerimento NDT</h2>
+  <input type="text" id="NdT3" placeholder="NDT Requerimento">
+  <input type="text" id="MM55" placeholder="Soma da mistura"><br>
+  <select id="Op55">
+    <option>3° Alimento NDT</option>
+    <option value="78.7">Milho</option>
+    <option value="61.9">Leucena</option>
+    <option value="42.3">Palha de arroz</option>
+    <option value="68.24">Milho desintegrado palha e sabugo</option>
+     <option value="84.56">Glúten de milho</option>
+     <option value="73.45">Farelo de Glúten de milho</option>
+      <option value="78.43">Sorgo</option>
+       <option value="79.5">Farelo de Arroz</option>
+        <option value="72.74">Farelo de trigo</option>
+         <option value="77">Casca de soja</option>
+          <option value="79.8">Polpa citrica</option>
+           <option value="70">Melaço</option>
+            <option value="53.51">Farinha de carne</option>
+             <option value="86.67">Farinha de sangue</option>
+              <option value="69.91">Farinha de peixe</option>
+               <option value="90">Soja</option>
+                <option value="82.2">Farelo de soja</option>
+                 <option value="82.86">Caroço de algodão</option>
+                 <option value="65.77">Farelo de algodão</option>
+  </select><br>
+  <button onclick="RRQ()">Calcular</button>
+  <p id="resposta33"></p>
+  
+  
+  
+  
+<footer><b>
+  
+<img src="https://res.cloudinary.com/dveuzubeg/image/upload/v1720129120/20240704_183626_gtaoi7.png" height="50px" width="50px" class="iimmmgg"></img>
+  Marcelo Farias
+ 
+ 
+ </b></footer>
+</body>
+<script>
+  
+  function calc(){
+    var Vv=document.getElementById("EXI").value;
+    var PB01=document.getElementById("Op11").value;
+    var PB02=document.getElementById("Op22").value;
+    
+    var sub1=(PB01-Vv);
+    var sub2=(PB02-Vv);
+    
+    
+    if(sub1<0&&sub2<0){
+      document.getElementById("resposta").innerHTML="PB1: "+(sub2*-1)+" "+ "PB2:"+(sub1*-1)+"___PB1____"+((sub2*100)/(sub1+sub2))+"%"+"___PB2____"+((sub1*100)/(sub1+sub2))+"%";
+    }
+   else if(sub1>=0&&sub2>=0){
+      document.getElementById("resposta").innerHTML="PB1: "+(sub2)+" "+ "PB2:"+(sub1)+"___PB1____"+((sub2*100)/(sub1+sub2))+"%"+"___PB2____"+((sub1*100)/(sub1+sub2))+"%";
+    }
+    else if(sub1<0&&sub2>=0){
+      document.getElementById("resposta").innerHTML="PB1: "+(sub2)+" "+"PB2 : "+ (sub1*-1)+" ___PB1___"+((sub2*100)/((sub1*-1)+sub2))+" ___PB2___"+((sub1*100)/((sub1*-1)+sub2))*-1+"%";
+    }
+    else{document.getElementById("resposta").innerHTML="Fail";}
+  }
+    
+    function mmpp(){
+      var PPp1=document.getElementById("porcent1").value;
+      var PPp2=document.getElementById("porcent2").value;
+      var ND=document.getElementById("Op33").value;
+      var NDTt=document.getElementById("Op44").value
+      var sm=((PPp1*(ND/100))+(PPp2*(NDTt/100)));
+      
+      document.getElementById("resposta22").innerHTML="PB1:"+(PPp1*(ND/100))+"PB2 :"+" "+(PPp2*(NDTt/100))+"%"+"Soma da mistura="+sm;
+    }
+  
+function RRQ(){
+      var M1=document.getElementById("NdT3").value;
+      var M2=document.getElementById("MM55").value;
+      var M3=document.getElementById("Op55").value;
+      
+      //
+      var M5=(M1-M2);
+      var M7=((M3-M1)*-1);
+      var SMF2=(M5+M7);
+      var Por3=((M5*100)/SMF2);
+      var Por4=((M7*100)/SMF2);
+      //
+      var M4=(M2-M1);
+      var M6=(M3-M1);
+      var SMF1=(M4+M6);
+      var Por1=((M4*100)/SMF1);
+      var Por2=((M6*100)/SMF1);
+      //
+      var M8=(M1-M2);
+      var M9=((M1-M3)*-1);
+      var SMF3=((M5+M7)*-1);
+      var Por5=(((M5*100)/SMF2)*-1);
+      var Por6=((M7*100)/SMF2);
+      
+      if(M1<M2){
+        document.getElementById("resposta33").innerHTML=M4+";"+M6+";"+SMF1+"(Mistura:"+Por1+"%)"+";"+"(3° Alimento"+Por2+"%)";
+      }
+      
+      else if(M1>M2){
+        document.getElementById("resposta33").innerHTML=M5+";"+M7+";"+SMF2+";"+"(Mistura:"+Por3+"%)"+";"+"(3° Alimento"+Por4+"%)";}
+        
+       else if(M3<M1){
+        document.getElementById("resposta33").innerHTML=M8+";"+M9+";"+SMF3+";"+"(Mistura:"+Por5+"%)"+";"+"(3° Alimento"+Por6+"%)";
+        
+      }
+     else{document.getElementById("resposta33").innerHTML="Fail";}
+}
+  
+  
+  
+</script>
+</html>
